@@ -85,7 +85,7 @@ const isCouponValueValid = function (coupons) {
 
 const userCoupon = coupons.find(isCouponValueValid);
 if (!userCoupon) {
-    alert("el cupón " + userCoupon + " no es valido");
+    alert("el cupón " + couponValue + " no es valido");
 }else if (priceValue == "") {
     alert("Debes ingresar un valor");
 }else{

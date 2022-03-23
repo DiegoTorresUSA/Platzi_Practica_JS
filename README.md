@@ -15,3 +15,5 @@ Exercises JS
 -Segundo paso: implementar la fórmula en JS
 -Tercer paso: crear funciones
 -Cuarto Paso: integrar JS con HTML
+
+## Taller #3 - Promerdio, mediana y moda
