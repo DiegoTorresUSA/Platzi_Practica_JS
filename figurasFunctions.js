@@ -104,3 +104,24 @@ function calculAreaCirculo() {
     const area = (value * value) * PI;
     alert(area);
 }
+
+function calcularAreaIsosceles(){
+    const input1 = document.getElementById("InputLado1Isosceles");
+    const input2 = document.getElementById("inputLado2Isosceles");
+    const input3 = document.getElementById("InputBaseIsosceles");
+
+    const lado1iso = input1.value;
+    const lado2iso = input2.value;
+    const baseiso = input3.value;
+
+    if (lado1iso == "" || lado2iso == "" || baseiso == "") {
+        console.log("Debes digitar los lados y la base");
+    }else if (lado1iso != lado2iso) {
+        alert("Los Lados no son iguales");
+    }else{
+        const altura = Math.sqrt((lado1iso**2)-(baseiso**2)/4);
+
+        alert(altura);
+    }
+
+}
