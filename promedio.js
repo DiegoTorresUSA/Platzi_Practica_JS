@@ -12,7 +12,7 @@ for (let i = 0; i < lista1.length; i++) {
 }
 
 const promedioLista = sumaLista1 / lista1.length;
-console.log("El promedio de valores es: " + promedioLista)
+console.log("El promedio de valores es: " + promedioLista);
 
 function calcularMediaAritmetica(lista) {
     // let sumaLista = 0;
