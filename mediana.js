@@ -62,14 +62,13 @@ if (esPar(lista1.length)){
  ****************************************/
 
 function mitadListaFuncion(listaFun) {
-
+    listaFun.sort(function (a,b){
+        return a -b
+    });
+    console.log(listaFun);
     // sacamos el conteo de posiciones y lo dividimos por 2
     const mediumList = parseInt(listaFun.length / 2) ;
-    console.log(listaFun.length);
-    console.log(mediumList);
-    console.log(listaFun);
     let medium;
-
     // nos permite validar si es par o no un numero para integrar a la lista
     if (listaFun.length % 2 === 0){
         const position1 = listaFun[mediumList -1];
@@ -102,5 +101,5 @@ function calcularMediaAritmetica1(lista) {
     );
     const promedioLista = (sumaLista / lista.length);
 
-    return promedioLista;
+    return parseInt(promedioLista);
 }
